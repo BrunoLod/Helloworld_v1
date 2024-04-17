@@ -1,0 +1,92 @@
+.post {
+    text-align: center;
+    width: 282px;
+    padding-bottom: 1.5rem;
+    transition: transform .2s;
+}
+
+.post:hover {
+    transform: translate(0, -1rem);
+}
+
+.wrapper {
+    position: relative;
+}
+
+.capa {
+    display: block;
+    width: 100%;
+    height: 350px;
+    box-shadow: 0px 2px 20px rgba(110, 78, 177, 0.8);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.content {
+    position: absolute; /* Define a posição absoluta em relação ao container pai (.wrapper) */
+    bottom: 20px; /* Distância do conteúdo para a parte inferior da imagem */
+    left: 50%; /* Centraliza o conteúdo horizontalmente */
+    transform: translateX(-50%); /* Corrige a posição para centralizar completamente */
+    text-align: center; /* Centraliza o texto dentro do conteúdo */
+    color: white; /* Cor do texto */
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Cor preta com opacidade de 50% */
+    border-radius: 12px;
+}
+
+.titulo {
+    font-family: var(--fonte);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--branco);
+    -webkit-text-stroke: 1px black;
+    stroke: 1px black;
+    line-height: 1.75rem;
+    margin: 1.5rem 0 1.75rem;
+    
+}
+
+.botaoLer {
+    display: inline-block;
+    border: none;
+    border-radius: 24px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-family: var(--fonte);
+    line-height: 1.125rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    color: var(--branco);
+    cursor: pointer;
+
+
+     /* Remove a estilização padrão do botão */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.botaoLer:hover {
+    color: var(--roxo);
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .post {
+        width: 336px;
+    }
+    .titulo {
+        font-weight: 600;
+    }
+    .botaoLer {
+        padding: 0.6875rem 1.5rem;
+        font-size: 1.375rem;
+    }
+}

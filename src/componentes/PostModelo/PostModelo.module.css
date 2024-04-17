@@ -1,0 +1,38 @@
+.postModeloContainer {
+    background-color: var(--preto);
+    color: var(--branco);
+    position: relative;
+}
+
+.titulo {
+    color: var(--roxo);
+    height: 204px;
+    font-family: var(--fonte);
+    padding: 0 7.5rem;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.postConteudoContainer {
+    padding: 2.5rem 7.5rem 4.5rem;
+}
+
+@media (max-width: 744px) {
+    .postConteudoContainer {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 744px) {
+
+    .titulo {
+        height: 104px;
+        padding: 0 1rem;
+        font-size: 2rem;
+    }
+
+    .postConteudoContainer {
+        padding: 2rem 1rem 1.5rem;
+    }
+}

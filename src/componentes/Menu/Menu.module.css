@@ -1,0 +1,34 @@
+.navegacao {
+    background-color: var(--preto);
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+
+.link {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--branco);
+    text-decoration: none;
+    margin-right: 4.38rem;
+}
+
+.linkDestacado {
+    color: var(--roxo);
+    text-decoration: underline;
+}
+
+.link:hover{
+    cursor: pointer;
+    color: var(--roxo);
+}
+
+@media (max-width: 744px) {
+    .navegacao {
+        height: 72px;
+    }
+}

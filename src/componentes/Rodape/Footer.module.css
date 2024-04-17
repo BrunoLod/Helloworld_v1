@@ -1,0 +1,13 @@
+.footer {
+    background-color: var(--preto);
+    text-align: center;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 18px;
+    font-family: var(--fonte);
+    padding: 1rem;
+}
+
+.nome {
+    color: var(--roxo);
+}

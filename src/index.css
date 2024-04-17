@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --preto: #010D00;
+  --roxo: #6E4EB1 ;
+  --branco: #E1E1E1;
+  --rosa: #AD1895;
+  --rosa-claro: #D350C0;
+  --vermelho: #C6225A;
+
+  --fonte: "Noto Sans", sans-serif;
+  font-family: var(--fonte);
+
+}

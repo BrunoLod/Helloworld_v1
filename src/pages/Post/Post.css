@@ -1,0 +1,99 @@
+.post-markdown-container h3,
+.post-markdown-container h4,
+.post-markdown-container h5,
+.post-markdown-container h6 {
+    font-family: var(--fonte);
+}
+
+.post-markdown-container h3 {
+    color: var(--roxo);
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 2.2rem;
+}
+
+.post-markdown-container h4 {
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+}
+
+.post-markdown-container p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-markdown-container a {
+    margin-top: -10rem;
+    color: var(--roxo);
+    text-decoration: none;
+}
+
+.post-markdown-container a:hover {
+
+    /*
+    
+    Adiciona um contorno branco, com pouca opacidade,
+    junto de um blur roxo, para ornar com a página.
+    
+    */
+
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.05), 0 0 10px #6E4EB1;
+}
+
+.post-markdown-container img {
+    height: 380px;
+    width: 380px;
+    display: block;
+    margin: 0 auto;
+}
+
+.post-markdown-container ul {
+    font-size: 1.5rem;
+}
+
+.post-markdown-container ul>li {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    list-style: disc;
+}
+
+.post-markdown-container pre,
+.post-markdown-container blockquote {
+    height: fit-content;
+    border: 1.5px solid var(--roxo); 
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-markdown-container pre {
+    overflow-x: auto;
+}
+
+.segundoTitulo {
+    color: var(--roxo);
+    font-family: var(--fonte);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+    .post-markdown-container p {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 744px) {
+    .post-markdown-container h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .post-markdown-container p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+}
